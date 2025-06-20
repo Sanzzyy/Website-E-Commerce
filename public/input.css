@@ -123,3 +123,7 @@ h3 {
 .backdrop {
   filter: blur(100px);
 }
+
+.icons {
+  margin-top: 200px;
+}

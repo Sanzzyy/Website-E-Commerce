@@ -99,7 +99,7 @@
     "yaml": "^2.8.0"
   },
   "scripts": {
-    "watch": "tailwindcss -i ./input.css -o ./output.css --watch"
+    "watch": "tailwindcss -i ./public/input.css -o ./public/output.css --watch"
   },
   "keywords": [],
   "author": "",

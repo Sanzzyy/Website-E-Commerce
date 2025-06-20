@@ -92,3 +92,22 @@ const activeLink = () => {
 };
 
 window.addEventListener("scroll", activeLink);
+
+// Scroll reveal
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2000,
+  delay: 300,
+  reset: false,
+});
+
+sr.reveal(".home_data, .about_top, .popular_top, .review_top, .review_swiper, .footer_icon, .footer_content, .copy_right");
+sr.reveal(".home_image", { delay: 500, scale: 0.5 });
+sr.reveal(".service_card, .popular_card", { interval: 100 });
+
+sr.reveal(".about_item_1-content,.about_item_1-img ", { delay: 300, origin: "right" });
+sr.reveal(".about_item_2-content,.about_item_2-img ", { delay: 450, origin: "left" });
+sr.reveal(".about_item_3-content,.about_item_3-img ", { delay: 550, origin: "right" });
+
+sr.reveal(".footer_office", { delay: 1000, origin: "left" });
