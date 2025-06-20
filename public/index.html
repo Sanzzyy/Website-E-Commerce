@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shorcut icon" href="./assets/img/avatar_man.svg" />
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="output.css" />
+    <title>E-commerce Website || TailwindCSS</title>
+  </head>
+
+  <body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class="w-full fixed top-0 left-0 z-50">
+      <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <div class="font-KiteOne sm:text-2xl">Solo Code</div>
+        <div
+          id="nav-menu"
+          class="absolute top-0 left-[-100%] h-[100vh] backdrop-blur-sm w-full flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit bg-primary lg:bg-transparent lg:h-auto lg:w-auto bg-opacity-80"
+        >
+          <ul class="flex flex-col items-center gap-8 lg:flex-row">
+            <li>
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="#popular" class="nav-link">Popular</a>
+            </li>
+            <li>
+              <a href="#review" class="nav-link">Review</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+          <i id="hamburger" class="ri-menu-4-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+      <section id="home" class="bg-[#222831] relative">
+        <div class="container">
+          <!-- blob 1 -->
+          <div
+            class="w-[350px] h-72 xl:bg-gradient-to-tr from-[#6d28d9] to-[#1e40af] rounded-full z-2 opacity-70 absolute bottom-[15rem] right-[13rem] animate-movingY backdrop mix-blend-lighten"
+          ></div>
+
+          <div class="flex flex-col items-center gap-5 lg:flex-row">
+            <!-- content -->
+            <div class="w-full space-y-3 lg:w-1/2">
+              <!-- <h1 class="mb-3"><span class="text-sky-500">Stylish & Ergonomic</span> Keyboard <br />Top Quality. <span class="text-yellow-500"> Affordable Price.</span></h1> -->
+              <h1 class="font-Poppins leading-[3.5rem]">
+                Stylish & Ergonomic Keyboard <br />
+                <span class="text-sky-500 text-shadow">Top Quality.</span> <span class="text-yellow-500 text-shadow"> Affordable Price.</span>
+              </h1>
+
+              <p class="text-slate-300 font-KiteOne">
+                Connect with keyboard lovers around the world. Share your custom builds, exchange tips, and be part of a growing community passionate about every keystroke.
+              </p>
+
+              <div class="flex flex-col gap-2 sm:flex-row md:gap-4 lg:pt-5 xl:pt-10">
+                <button class="btn_yellow relative overflow-hidden">
+                  <span class="relative z-9">Shop now</span>
+                  <i class="ri-shopping-bag-fill relative z-9"></i>
+                </button>
+                <button class="btn_sky relative overflow-hidden">
+                  <span class="relative z-9">Know more</span>
+                  <i class="ri-arrow-right-s-fill relative z-9"></i>
+                </button>
+              </div>
+              <p class="text-xs font-KiteOne text-slate-300 mt-2 pt-2">Get <span class="text-yellow-500 font-bold"> 50%.</span> off — limited time offer!</p>
+              <div class="flex items-center gap-5 text-lg lg:pt-8">
+                <a href="https://www.tiktok.com/@webdev.sajid06">
+                  <i class="ri-tiktok-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                </a>
+                <i class="ri-youtube-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                <a href="https://www.instagram.com/webdev_sajid/">
+                  <i class="ri-instagram-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/muhammad-sajid-4752742a0/">
+                  <i class="ri-linkedin-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                </a>
+              </div>
+            </div>
+            <!-- image -->
+            <div class="w-full relative lg:w-1/2 lg:ps-10 rotate-[20deg] scale-105 scale-img">
+              <img src="assets/img/keyboard/keyboard_couple.webp" alt="keyboard_couple" class="animate-movingY" />
+              <!-- icons -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ Services ~~~~~~~~~~~~~~~-->
+      <div class="bg-secondary text-primary py-20">
+        <div class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <!-- card 1 -->
+          <div class="border border-primary p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-500 hover:bg-primary hover:text-white">
+            <div class="flex items-center gap-5">
+              <i class="ri-truck-line text-3xl md:text-4xl xl:text-5xl"></i>
+              <p class="md:text-lg font-bold">
+                Fast <br />
+                Delivery
+              </p>
+            </div>
+            <p class="font-KiteOne">Orders shipped within 24 hours. Safe & fast delivery across Indonesia.</p>
+          </div>
+          <!-- card 2 -->
+          <div class="border border-primary p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-500 hover:bg-primary hover:text-white">
+            <div class="flex items-center gap-5">
+              <i class="ri-customer-service-line text-3xl md:text-4xl xl:text-5xl"></i>
+              <p class="md:text-lg font-bold">
+                24/7 <br />
+                Support
+              </p>
+            </div>
+            <p class="font-KiteOne">Our team is ready to help anytime via chat & email.</p>
+          </div>
+          <!-- card 3 -->
+          <div class="border border-primary p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-500 hover:bg-primary hover:text-white">
+            <div class="flex items-center gap-5">
+              <i class="ri-building-line text-3xl md:text-4xl xl:text-5xl"></i>
+              <p class="md:text-lg font-bold">
+                Quality <br />
+                Builds
+              </p>
+            </div>
+            <p class="font-KiteOne">Hand-assembled custom keyboards built by professionals.</p>
+          </div>
+          <!-- card 4 -->
+          <div class="border border-primary p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-500 hover:bg-primary hover:text-white">
+            <div class="flex items-center gap-5">
+              <i class="ri-group-line text-3xl md:text-4xl xl:text-5xl"></i>
+              <p class="md:text-lg font-bold">
+                Join <br />
+                Community
+              </p>
+            </div>
+            <p class="font-KiteOne">Join our growing user community for tips, feedback, and reviews.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--~~~~~~~~~~~~~~~ About us ~~~~~~~~~~~~~~~-->
+      <section id="about" class="relative overflow-hidden bg-primary">
+        <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
+          <h2 class="title">About Us</h2>
+          <p class="max-w-2xl">Follow instruction for more</p>
+        </div>
+        <div class="container space-y-10 xl:space-y-0">
+          <!-- item 1 -->
+          <div class="flex flex-col items-center lg:flex-row gap-5">
+            <!-- image -->
+            <div class="w-full lg:w-1/2">
+              <img
+                src="assets/img/keyboard/keyboard_orange.webp"
+                alt="keyboard_black"
+                class="w-full sm:w-2/3 lg:w-full xl:2/3 mx-auto -rotate-[15deg] hover:-rotate-[10deg] hover:scale-110 transition duration-300"
+              />
+            </div>
+
+            <!-- content -->
+            <div class="w-full lg:w-full">
+              <div class="space-y-5">
+                <h3>Black & <span class="text-orange-500">Orange</span> Gaming Keyboard</h3>
+                <p class="text-slate-300 font-KiteOne">
+                  Stand out on the battlefield with this bold black and orange combo. Designed for gamers who crave performance and personality, this tenkeyless keyboard offers faster response times
+                  and a sleek layout that maximizes desk space for mouse movement.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
+            <!-- image -->
+            <div class="w-full lg:w-1/2">
+              <img
+                src="assets/img/keyboard/keyboard_blue.webp"
+                alt="keyboard_black"
+                class="w-full sm:w-2/3 lg:w-full xl:2/3 mx-auto -rotate-[15deg] hover:-rotate-[10deg] hover:scale-110 transition duration-300"
+              />
+            </div>
+
+            <!-- content -->
+            <div class="w-full lg:w-full">
+              <div class="space-y-5">
+                <h3><span class="text-sky-500">Blue</span> & White Gaming Keyboard</h3>
+                <p class="text-slate-300 font-KiteOne">
+                  Clean, cool, and combat-ready. The white and soft blue keys deliver both comfort and clarity, perfect for long gaming sessions. Whether you’re grinding ranked or chilling with
+                  friends, this keyboard keeps your setup stylish and sharp.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="flex flex-col items-center lg:flex-row gap-5">
+            <!-- image -->
+            <div class="w-full lg:w-1/2">
+              <img
+                src="assets/img/keyboard/keyboard_black.webp"
+                alt="keyboard_black"
+                class="w-full sm:w-2/3 lg:w-full xl:2/3 mx-auto -rotate-[15deg] hover:-rotate-[10deg] hover:scale-110 transition duration-300"
+              />
+            </div>
+
+            <!-- content -->
+            <div class="w-full lg:w-full">
+              <div class="space-y-5">
+                <h3><span class="text-black"> Black</span> & White Gaming Keyboard</h3>
+                <p class="text-slate-300 font-KiteOne">
+                  A timeless duo built for serious players. With precision-crafted keys and a no-nonsense design, this keyboard delivers pro-level performance for competitive gaming. Stay focused,
+                  stay in control, and dominate every match in style.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ Popular ~~~~~~~~~~~~~~~-->
+      <section id="popular" class="bg-[#30373f]">
+        <div class="flex flex-col items-center gap-3 text-center mb-40 md:mb-28">
+          <h2 class="title">Your Choise Keyboard</h2>
+          <p class="max-w-2xl">Follow instruction for more</p>
+        </div>
+        <div>
+          <div class="container w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <!-- card 1 -->
+            <div class="popular_card top-0 transition-all bg-primary p-10 pt-24 rounded-md relative">
+              <img src="assets/img/keyboard/keyboard_matcha.webp" alt="keyboard_creamy" class="w-56 absolute top-5 -bottom-20 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500 rotate-[22deg]" />
+              <h3>Keyboard Creamy</h3>
+              <p>Jess no Limit</p>
+              <div class="text-yellow-500 text-xs py-3">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-xl">$5</p>
+                <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                  <i class="ri-shopping-cart-fill"></i>
+                </button>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="popular_card top-0 transition-all bg-primary p-10 pt-24 rounded-md relative duration-500">
+              <img
+                src="assets/img/keyboard/keyboard_vanilla.webp"
+                alt="keyboard_creamy"
+                class="w-56 absolute top-5 -bottom-20 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500 rotate-[22deg]"
+              />
+              <h3>Keyboard Creamy</h3>
+              <p>Jess no Limit</p>
+              <div class="text-yellow-500 text-xs py-3">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-line text-gray-400"></i>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-xl">$5</p>
+                <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                  <i class="ri-shopping-cart-fill"></i>
+                </button>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="popular_card top-0 transition-all bg-primary p-10 pt-24 rounded-md relative duration-500">
+              <img src="assets/img/keyboard/keyboard_red.webp" alt="keyboard_creamy" class="w-56 absolute top-5 -bottom-20 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500 rotate-[22deg]" />
+              <h3>Keyboard Creamy</h3>
+              <p>Jess no Limit</p>
+              <div class="text-yellow-500 text-xs py-3">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-line text-gray-400"></i>
+                <i class="ri-star-line text-gray-400"></i>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-xl">$5</p>
+                <button class="bg-yellow-500 px-2 py-1 rounded-sm text-xl">
+                  <i class="ri-shopping-cart-fill"></i>
+                </button>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="popular_card top-0 transition-all bg-primary p-10 pt-24 rounded-md relative duration-500">
+              <img src="assets/img/keyboard/keyboard_brown.webp" alt="keyboard_creamy" class="w-56 absolute top-5 -bottom-20 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-500 rotate-[22deg]" />
+              <h3>Keyboard Creamy</h3>
+              <p>Jess no Limit</p>
+              <div class="text-yellow-500 text-xs py-3">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+                <i class="ri-star-line text-gray-400"></i>
+                <i class="ri-star-line text-gray-400"></i>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-xl">$5</p>
+                <button class="px-2 py-1 rounded-sm text-xl bg-yellow-500">
+                  <i class="ri-shopping-cart-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+      <section id="review" class="bg-primary">
+        <div class="flex flex-col items-center gap-3 text-center mb-10">
+          <h2 class="title">Customer Review</h2>
+          <p class="max-w-2xl">Follow instruction for more</p>
+        </div>
+        <div class="container">
+          <div class="swiper py-20">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-[#30373f] rounded-md p-6">
+                  <div class="flex items-center">
+                    <img src="assets/img/avatar_review/girl_1.webp" alt="review" class="w-12 h-12 rounded-full" />
+                    <div class="ml-2">
+                      <p class="text-yellow-500 uppercase">Amelia</p>
+                      <p>UI/UX</p>
+                    </div>
+                    <i class="ri-double-quotes-r text-3xl ml-auto"></i>
+                  </div>
+                  <p class="font-KiteOne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates fuga autem deleniti magni ullam et delectus numquam vel eos nam.</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-[#30373f] rounded-md p-6">
+                  <div class="flex items-center">
+                    <img src="assets/img/avatar_review/girl_2.webp" alt="review" class="w-12 h-12 rounded-full" />
+                    <div class="ml-2">
+                      <p class="text-yellow-500 uppercase">Taylor</p>
+                      <p>Design</p>
+                    </div>
+                    <i class="ri-double-quotes-r text-3xl ml-auto"></i>
+                  </div>
+                  <p class="font-KiteOne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates fuga autem deleniti magni ullam et delectus numquam vel eos nam.</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-[#30373f] rounded-md p-6">
+                  <div class="flex items-center">
+                    <img src="assets/img/avatar_review/man_1.webp" alt="review" class="w-12 h-12 rounded-full" />
+                    <div class="ml-2">
+                      <p class="text-yellow-500 uppercase">Ajax</p>
+                      <p>Front End Developer</p>
+                    </div>
+                    <i class="ri-double-quotes-r text-3xl ml-auto"></i>
+                  </div>
+                  <p class="font-KiteOne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates fuga autem deleniti magni ullam et delectus numquam vel eos nam.</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-[#30373f] rounded-md p-6">
+                  <div class="flex items-center">
+                    <img src="assets/img/avatar_review/man_2.webp" alt="review" class="w-12 h-12 rounded-full" />
+                    <div class="ml-2">
+                      <p class="text-yellow-500 uppercase">Bachira</p>
+                      <p>Fullstack</p>
+                    </div>
+                    <i class="ri-double-quotes-r text-3xl ml-auto"></i>
+                  </div>
+                  <p class="font-KiteOne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates fuga autem deleniti magni ullam et delectus numquam vel eos nam.</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-[#30373f] rounded-md p-6">
+                  <div class="flex items-center">
+                    <img src="assets/img/avatar_review/girl_3.webp" alt="review" class="w-12 h-12 rounded-full" />
+                    <div class="ml-2">
+                      <p class="text-yellow-500 uppercase">Zahra</p>
+                      <p>Software Engineer</p>
+                    </div>
+                    <i class="ri-double-quotes-r text-3xl ml-auto"></i>
+                  </div>
+                  <p class="font-KiteOne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates fuga autem deleniti magni ullam et delectus numquam vel eos nam.</p>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer class="bg-sky-800 text-white pt-20 pb-40 md:pt-28 relative">
+      <!-- newsletter -->
+      <div class="container text-white absolute top-0 right-0 left-0 -translate-y-1/2">
+        <div class="bg-[#272c32] px-10 pt-5 pb-10 space-y-5 rounded-md">
+          <h3><span class="text-yellow-500">Tell Us </span> What You Think</h3>
+          <form name="contact" method="POST" data-netlify="true" action="thankyou.html" class="flex flex-col md:flex-row gap-1">
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="text" name="username" placeholder="Enter your name here..." class="w-full px-5 py-3 text-black rounded-md outline-none" required />
+            <input type="text" name="feedback" placeholder="Share your feedback here..." class="w-full px-5 py-3 text-black rounded-md outline-none" required />
+            <button type="submit" class="flex items-center justify-center gap-1 bg-red-500 px-5 py-3 rounded-md hover:opacity-80 duration-300">
+              <span>Submit</span>
+              <i class="ri-send-plane-2-fill"></i>
+            </button>
+          </form>
+          <form name="contact" netlify hidden>
+            <input type="text" name="username" />
+            <input type="text" name="feedback" />
+          </form>
+        </div>
+      </div>
+      <!-- social icon -->
+      <div class="container sm:mt-16 md:mt-2">
+        <div class="border-b border-b-primary relative">
+          <div class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto">
+            <div class="bg-sky-800 text-center text-lg space-x-2">
+              <a href="https://www.tiktok.com/@webdev.sajid06">
+                <i class="ri-tiktok-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-sajid-4752742a0/">
+                <i class="ri-linkedin-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
+              </a>
+              <i class="ri-youtube-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
+              <a href="https://www.instagram.com/webdev_sajid/">
+                <i class="ri-instagram-line hover:text-yellow-500 duration-300 cursor-pointer"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start sm:mt-10">
+        <!-- item 1 -->
+        <div>
+          <div class="text-7xl text-center inline-block">
+            <i class="ri-building-2-fill"></i>
+            <p class="font-KiteOne text-xl sm:text-2xl">Solo Code</p>
+          </div>
+        </div>
+
+        <!-- item 2 -->
+        <div>
+          <p class="mb-5 font-bold text-xl">Quick Link</p>
+          <div class="flex flex-col gap-1">
+            <a href="">Keyboard 1</a>
+            <a href="">Keyboard 1</a>
+            <a href="">Keyboard 1</a>
+            <a href="">Keyboard 1</a>
+          </div>
+        </div>
+
+        <!-- item 3  -->
+        <div>
+          <p class="mb-5 font-bold text-xl">Popular Services</p>
+          <div class="flex flex-col gap-1">
+            <a href="">Keyboard 2</a>
+            <a href="">Keyboard 2</a>
+            <a href="">Keyboard 2</a>
+            <a href="">Keyboard 2</a>
+          </div>
+        </div>
+
+        <!-- item 4  -->
+        <div>
+          <p class="mb-5 font-bold text-xl">Contact Us</p>
+          <div class="flex flex-col gap-1">
+            <a href="">+62 895 2573 7776</a>
+            <a href="">sajidizzulhaqz@gmail.com</a>
+            <br />
+            <p>1234 TailwindCSS</p>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="container absolute bottom-0 left-1/2 -translate-x-1/2 p-5">
+        <p class="text-center opacity-50">Copyright &copy; 2025 SoloCode. All rights reserved.</p>
+      </div>
+      <!-- floral image -->
+    </footer>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+    <a href="#" id="scroll-up" class="fixed right-10 -bottom-1/2 bg-yellow-500 inline-block px-2 py-1 md:px-3 md:py-2 rounded-full text-lg z-50 hover:-translate-y-1 duration-300">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
+    <!-- Netlify form fallback detection -->
+    <form name="kontak" netlify hidden>
+      <input type="text" name="pesan" />
+    </form>
+
+    <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+    <script src="./main.js"></script>
+  </body>
+</html>
